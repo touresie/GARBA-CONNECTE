@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vente de Garba en Ligne</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Vente de Garba en Ligne</h1>
+        <p>Commandez votre Garba préféré et faites-vous livrer !</p>
+    </header>
+
+    <section class="menu">
+        <h2>Choisissez votre quantité</h2>
+        <form id="orderForm">
+            <label>
+                <input type="radio" name="quantity" value="500" required /> 500 FCFA
+            </label><br />
+            <label>
+                <input type="radio" name="quantity" value="1000" /> 1000 FCFA
+            </label><br />
+            <label>
+                <input type="radio" name="quantity" value="1500" /> 1500 FCFA
+            </label><br />
+            <label>
+                <input type="radio" name="quantity" value="2000" /> 2000 FCFA
+            </label><br /><br />
+
+            <label for="adresse">Adresse de livraison :</label><br />
+            <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required /><br /><br />
+
+            <button type="submit">Commander</button>
+        </form>
+    </section>
+
+    <section class="confirmation" id="confirmationMessage" style="display:none;">
+        <h2>Commande confirmée !</h2>
+        <p id="details"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
